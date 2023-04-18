@@ -15,7 +15,7 @@
 
 
     <nav>
-        <a href="#" class="logo"><img src="imagens/logo.png" width="120px"></a>
+        <a href="#" class="logo"><img src="imagens/logoTransparente.png" width="120px"></a>
 
         <ul class="navbar">
            <li><a href="" class="active">Página principal</a></li>
@@ -39,8 +39,7 @@
     </div>
     
     <div class="images">
-    <img src="imagens/backgroundLegal.jpg" class="shape">
-    <img src="imagens/imgPromoAutoEscola.png" class="divulgacao">
+    <img src="imagens/divulgacao.png" class="divulgacao">
     </div> 
 </div>
 
@@ -148,24 +147,32 @@ nav{
 }
 
 
-.images img{
-    height: 100%;
-    position: absolute;
-    left: 50%;
 
-    bottom: 120px;
-    transform: translateX(-70%);
-    transition: bottom 1s, left 1s;
+
+.images .divulgacao{
+    
+    transform: translateX(-160%);
 }
 
-.images:hover .shape{
+.images img{
+    place-items: center;
+    height: 700px;
+    position: absolute;
+    left: 200%;
+    bottom: 200px;
+    transform: translateX(-80%);
+    /* transition: bottom 1s, left 1s; */
+}
+
+/* .images:hover .shape{
     bottom: 90px;
+
 }
 
 .images:hover .divulgacao{
     left: 45%;
 }
-
+ */
 
 .detel a{
     background: linear-gradient(#ffdd00 0 0) var(--p, 0) / var(--p, 0) no-repeat;

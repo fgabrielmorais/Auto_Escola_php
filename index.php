@@ -16,7 +16,7 @@
 
     <section>
     <div class="divIMG">
-    <img src="imagens/logo.png" />
+    <img src="imagens/logoTransparente.png" />
     </div>      
 
         <div class="form-box">
@@ -62,6 +62,11 @@
 }
 
 
+body{
+    background: black;
+}
+
+
 .divIMG{
     display: flex;
     justify-content: center;
@@ -77,8 +82,7 @@ section {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    width: 100%;
-    background: black;
+    width: 80%;
     /* background: url('imagens/backgroundLegal.jpg')no-repeat;
     background-position: center;
     background-size: cover;
@@ -94,7 +98,6 @@ section {
     border: 2px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(15px);
     border-radius: 20px;
-
     display: flex;
     justify-content: center;
     align-items: center;
