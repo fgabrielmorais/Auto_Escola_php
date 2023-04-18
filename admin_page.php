@@ -14,27 +14,26 @@
 <body>
 
 
-    <nav>
+
+<nav>
         <a href="#" class="logo"><img src="imagens/logoTransparente.png" width="120px"></a>
 
         <ul class="navbar">
-           <li><a href="" class="active">Página principal</a></li>
-           <li><a href="">Aluno</a></li>
-           <li><a href="">Instrutores</a></li>
-           <li><a href="">CFC</a></li>
-           <li><a href="">Aulas</a></li>
-           <li><a href="">Habilitação do condutor</a></li>
+           <li><a href="admin_page.php" class="active">Página principal</a></li>
+           <li><a href="aluno.php" >Aluno</a></li>
+           <li><a href="instrutor.php">Instrutores</a></li>
+           <li><a href="cfc.php">CFC</a></li>
+           <li><a href="aulas.php">Aulas</a></li>
+           <li><a href="habilitacao.php">Habilitação do condutor</a></li>
         </ul>
-
-
 </nav>
+
     
 
 <div class="boasvindas">
     <div class="detel">
         <h1>Seja Bem-vindo(a)</h1>
-        <p>Aqui você poderá ver todos os alunos, 
-        <br>instrutores e habilitações</p>
+        <p>Aqui você poderá ver todos os alunos, instrutores, habilitações e muito mais</p>
         <a>Vamos começar?</a>
     </div>
     
@@ -151,7 +150,7 @@ nav{
 
 .images .divulgacao{
     
-    transform: translateX(-160%);
+    transform: translateX(-120%);
 }
 
 .images img{
@@ -159,7 +158,8 @@ nav{
     height: 700px;
     position: absolute;
     left: 200%;
-    bottom: 200px;
+    bottom: 150px;
+    
     transform: translateX(-80%);
     /* transition: bottom 1s, left 1s; */
 }
@@ -192,7 +192,80 @@ nav{
 
 
 
-@media (max-width: 1280px){
+@media (max-width: 1290px){
+
+*{
+    text-align: center;
+}
+
+.boasvindas .detel{
+    margin-top: 230px;
+    width: 100%;
+    margin-right: 40px;
+    text-align: center;
+}
+
+.images{
+    display: none;
+}
+
+
+
+
+img{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    align-items: center;
+}
+
+
+.navbar{
+    position: absolute;
+    top: 15%;
+    width: 270px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    transition: all .50s ease;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.navbar a {
+    display: block;
+    
+    text-align: center;
+    margin: 12px 0;
+    padding: 0 25px;
+    transition: all .50s ease;
+}
+
+.navbar a:hover{
+    background: #ffdd00;
+    color: black; 
+    transform: translateY(5px);
+}
+
+.navbar a.active{
+    color: yellow;
+}
+
+.navbar.open{
+    right: 10%;
+}
+}
+
+
+@media (max-width: 930px){
+  
+
     nav{
         padding: 14px 2%;
         transition: .2s;
@@ -204,55 +277,9 @@ nav{
         margin: 0 20px;
     }
 
+
 }
 
-@media (max-width: 1090px){
 
-    img{
-        display: flex;
-        justify-content: center;
-        place-items: center;
-        align-items: center;
-    }
-    .navbar{
-        position: absolute;
-        top: 100%;
-
-        width: 270px;
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-        transition: all .50s ease;
-    }
-
-    nav{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .navbar a {
-        display: block;
-        
-        text-align: center;
-        margin: 12px 0;
-        padding: 0 25px;
-        transition: all .50s ease;
-    }
-
-    .navbar a:hover{
-        background: #ffdd00;
-        color: black; 
-        transform: translateY(5px);
-    }
-
-    .navbar a.active{
-        color: yellow;
-    }
-
-    .navbar.open{
-        right: 10%;
-    }
-}
 
 </style>    

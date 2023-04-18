@@ -146,11 +146,6 @@ input:invalid ~ label{
     border-bottom: red;
 }
 
-@keyframes shake{
-    25%{transform: translateX(-5px)}
-    50%{transform: translateX(5px)}
-    100%{transform: translateX(-5px)}
-}
 
 
 .inputbox input {
