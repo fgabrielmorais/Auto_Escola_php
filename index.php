@@ -21,7 +21,7 @@
 
         <div class="form-box">
             <div class="form-value">
-                <form action="admin_page.html">
+                <form action="admin_page.php">
                     <h2>Login</h2>
                     <div class="inputbox">
                         <input type="email" placeholder="Informe seu e-mail" required>

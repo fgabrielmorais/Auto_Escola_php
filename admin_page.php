@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remicicon.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
     <title>Página Inicial</title>
 </head>
@@ -14,42 +14,37 @@
 <body>
 
 
+    <nav>
+        <a href="#" class="logo"><img src="imagens/logo.png" width="120px"></a>
 
-
-
-<!-- <div class="divOpcao">
-
-<ul>
-<li>Alunos</li>
-<li>Alunos</li>
-<li>Alunos</li>
-<li>Alunos</li>
-<li>Alunos</li>
-</ul>
-</div>
-</nav>
-
-
- -->
-
-
-<nav>
-
-<div class="divIMG">
-    <img src="imagens/logo.png" />
-</div>
-
-
-<div class="divOpcao">
-    <a href="#">Alunos</a>
-    <a href="#">Instrutores</a>
-    <a href="#">CFC</a>  
-    <a href="#">Aulas</a>
-    <a href="#">Habilitação</a>
-</div>
+        <ul class="navbar">
+           <li><a href="" class="active">Página principal</a></li>
+           <li><a href="">Aluno</a></li>
+           <li><a href="">Instrutores</a></li>
+           <li><a href="">CFC</a></li>
+           <li><a href="">Aulas</a></li>
+           <li><a href="">Habilitação do condutor</a></li>
+        </ul>
 
 
 </nav>
+    
+
+<div class="boasvindas">
+    <div class="detel">
+        <h1>Seja Bem-vindo(a)</h1>
+        <p>Aqui você poderá ver todos os alunos, 
+        <br>instrutores e habilitações</p>
+        <a>Vamos começar?</a>
+    </div>
+    
+    <div class="images">
+    <img src="imagens/backgroundLegal.jpg" class="shape">
+    <img src="imagens/imgPromoAutoEscola.png" class="divulgacao">
+    </div> 
+</div>
+
+
 
 
 </body>
@@ -67,65 +62,190 @@
     margin: 0;
     padding: 0;
     font-family: 'Nunito';
-
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: white;
 }
 
 
 body{
+    min-height: 100vh;
     background: black;
 }
 
 nav{
-    display: flex;
-    flex-direction: row;
     width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background: transparent;
-    /* border-bottom: 1px solid white; */
+    padding: 28px 12%;
+    transition: all .50s ease;
 }
 
-
-.divIMG img{
-    width: 100px;
-    margin-right: 20px;
-}
-
-.divOpcao{
+.logo{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    align-items: center;
 }
 
-.divOpcao a{
-    text-decoration: none;
-    margin-right: 90px;
-    margin-top: 50px;
-     color: white;
+.logo img{
+
 }
 
-.divOpcao a:hover{
-    color: yellow;
-    transition: .5s;
-}
-
-
-
-
-
-
-
-
-/* ul{
+.navbar{
     display: flex;
-     width: 100%;
-    flex-direction: row;
+
 }
 
-li{
-    position: relative;
-    width: 100%;
-} */
+.navbar a{
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0 30px;
+    transition: all .50s ease;
+}
+
+.navbar a:hover{
+    color: #ffdd00; 
+}
+.navbar a.active{
+    color: #ffdd00 ;
+}
+
+
+.detel{
+    margin-left: 10%;
+    margin-top: 15%;
+
+}
+
+.detel h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.detel p{
+    color: white;
+    line-height: 22px;
+}
+
+.images{
+    width: 220px;
+    height: 210px;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+
+}
+
+.boasvindas{
+    display: flex;
+}
+
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+
+    bottom: 120px;
+    transform: translateX(-70%);
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape{
+    bottom: 90px;
+}
+
+.images:hover .divulgacao{
+    left: 45%;
+}
+
+
+.detel a{
+    background: linear-gradient(#ffdd00 0 0) var(--p, 0) / var(--p, 0) no-repeat;
+    transition: .4s, background-position 0s;
+    padding: 10px 16px;
+    font-weight: bold;
+    display: inline-block;
+    color: white;
+    margin: 50px 0;
+    border-radius: 20px;
+}
+
+.detel a:hover{ 
+    --p: 100%;
+    color: black;
+}
 
 
 
+@media (max-width: 1280px){
+    nav{
+        padding: 14px 2%;
+        transition: .2s;
+    
+    }
+
+    .navbar a {
+        padding: 5px 0;
+        margin: 0 20px;
+    }
+
+}
+
+@media (max-width: 1090px){
+
+    img{
+        display: flex;
+        justify-content: center;
+        place-items: center;
+        align-items: center;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+
+        width: 270px;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        transition: all .50s ease;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .navbar a {
+        display: block;
+        
+        text-align: center;
+        margin: 12px 0;
+        padding: 0 25px;
+        transition: all .50s ease;
+    }
+
+    .navbar a:hover{
+        background: #ffdd00;
+        color: black; 
+        transform: translateY(5px);
+    }
+
+    .navbar a.active{
+        color: yellow;
+    }
+
+    .navbar.open{
+        right: 10%;
+    }
+}
 
 </style>    
