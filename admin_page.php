@@ -16,7 +16,7 @@
 
 
 <nav>
-        <a href="#" class="logo"><img src="imagens/logoTransparente.png" width="120px"></a>
+        <a href="admin_page.php" class="logo"><img src="imagens/logoTransparente.png" width="120px"></a>
 
         <ul class="navbar">
            <li><a href="admin_page.php" class="active">Página principal</a></li>
@@ -34,7 +34,7 @@
     <div class="detel">
         <h1>Seja Bem-vindo(a)</h1>
         <p>Aqui você poderá ver todos os alunos, instrutores, habilitações e muito mais</p>
-        <a>Vamos começar?</a>
+        <a href="admin_page.php">Vamos começar?</a>
     </div>
     
     <div class="images">

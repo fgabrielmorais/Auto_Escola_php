@@ -15,7 +15,7 @@
 
 
 <nav>
-        <a href="#" class="logo"><img src="imagens/logoTransparente.png" width="120px"></a>
+        <a href="admin_page.php" class="logo"><img src="imagens/logoTransparente.png" width="120px"></a>
 
         <ul class="navbar">
            <li><a href="admin_page.php">Página principal</a></li>
@@ -44,32 +44,32 @@
             
         <div class="input-group">
         <label for="nome">Nome Completo:</label>
-        <input type="text" id="nome" placeholder="Informe seu nome completo" required>
+        <input type="text" id="nome" placeholder="Informe o nome completo" required>
         </div>       
         
         <div class="input-group">
         <label for="email">E-mail:</label>
-        <input type="email" id="email" placeholder="Informe seu e-mail" required>
+        <input type="email" id="email" placeholder="Informe o e-mail" required>
         </div> 
 
         <div class="input-group">
         <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" placeholder="Informe seu telefone" required>
+        <input type="tel" id="telefone" placeholder="Informe o telefone" required>
         </div> 
 
         <div class="input-group">
         <label for="cpf">CPF</label>
-        <input type="text" id="cpf" placeholder="Informe seu cpf" required>
+        <input type="text" id="cpf" placeholder="Informe o cpf" required>
         </div> 
 
         <div class="input-group">
         <label for="data">Data de nascimento:</label>
-        <input type="date" id="data" placeholder="Informe sua data de nascimento" required>
+        <input type="date" id="data" placeholder="Informe a data de nascimento" required>
         </div> 
         
         <div class="input-group">
         <label for="endereco">Endereço:</label>
-        <input type="text" id="endereco" placeholder="Informe seu endereço" required>
+        <input type="text" id="endereco" placeholder="Informe o endereço" required>
         </div> 
         
 

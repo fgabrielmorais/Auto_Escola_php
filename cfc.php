@@ -15,7 +15,7 @@
 
 
 <nav>
-        <a href="#" class="logo"><img src="imagens/logoTransparente.png" width="120px"></a>
+        <a href="admin_page.php" class="logo"><img src="imagens/logoTransparente.png" width="120px"></a>
 
         <ul class="navbar">
            <li><a href="admin_page.php">Página principal</a></li>

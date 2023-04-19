@@ -38,9 +38,6 @@
                     </div>
 
                     <button>Entrar</button>
-                    <div class="register">
-                        <p>Não possui uma conta? <a href="">Cadastrar-se</a></p>
-                    </div>
                 </form>
             </div>
     </section>
@@ -201,22 +198,6 @@ button:hover{
 }
 
 
-.register {
-    font-size: .9em;
-    color: #fff;
-    text-align: center;
-    margin: 25px 0 10px;
-}
-
-.register p a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 600;
-}
-
-.register p a:hover {
-    text-decoration: underline;
-}
 
 
 @media (max-width: 1640px){
