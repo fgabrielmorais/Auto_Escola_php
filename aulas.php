@@ -38,43 +38,59 @@
 
 
     <div class="form-box">
-        <h1>Cadastrar um aluno</h1>
-        <p>Cadastre o aluno da Auto Escola</p>
+        <h1>Organize as aulas prática </h1>
+        <p>Organize as aulas da Auto Escola</p>
         <form action="#">
             
         <div class="input-group">
-        <label for="nome">Nome Completo:</label>
-        <input type="text" id="nome" placeholder="Informe seu nome completo" required>
+        <label for="nome">Nome Completo do candidato:</label>
+        <input type="text" id="nome" placeholder="Informe o nome completo do candidato" required>
         </div>       
         
         <div class="input-group">
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" placeholder="Informe seu e-mail" required>
+        <label for="cpf">Número do CPF do candidato:</label>
+        <input type="text" id="cpf" placeholder="Informe o cpf candidato" required>
         </div> 
 
         <div class="input-group">
-        <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" placeholder="Informe seu telefone" required>
+        <label for="telefone">Número de telefone do candidato:</label>
+        <input type="tel" id="telefone" placeholder="Informe o telefone do candidato" required>
         </div> 
 
-        <div class="input-group">
-        <label for="cpf">CPF</label>
-        <input type="text" id="cpf" placeholder="Informe seu cpf" required>
-        </div> 
+        <!-- <div class="input-group">
+        <label for="habDentran">Registro de habilitação do candidato no DETRAN:</label>
+        <input type="text" id="habDentran" placeholder="Informe seu cpf" required>
+        </div>  -->
 
         <div class="input-group">
-        <label for="data">Data de nascimento</label>
-        <input type="date" id="data" placeholder="Informe sua data de nascimento" required>
+        <label for="categoria">Categoria:</label>
+        <input type="text" id="categoria" placeholder="Informe a categoria que o candidato está se habilitando" required>
         </div> 
         
         <div class="input-group">
-        <label for="endereco">Endereço</label>
-        <input type="text" id="endereco" placeholder="Informe seu endereço" required>
+        <label for="dataAula">Data solicitada para a aula:</label>
+        <input type="date" id="dataAula" placeholder="Informe a data solicitada para a aula" required>
         </div> 
+
+        <div class="input-group">
+        <label for="instrutor">Nome do instrutor que irá ministrar a aula:</label>
+        <input type="text" id="instrutor" placeholder="Informe o nome do instrutor" required>
+        </div> 
+
+        <div class="input-group">
+        <label for="nmrReg">Número do registro do instrutor de trânsito no DETRAN:</label>
+        <input type="number" id="nmrReg" placeholder="Informe o número de registro do instrutor no DETRAN" required>
+        </div> 
+        
+        <div class="input-group">
+        <label for="placa">Placa do veículo utilizado:</label>
+        <input type="text" id="placa" placeholder="Informe a placa do veículo" required>
+        </div> 
+        
         
 
         <div class="button-group">
-               <button>Cadastrar</button> 
+               <button>Organizar</button> 
         </div>
         </form>
     </div>

@@ -38,8 +38,8 @@
 
 
     <div class="form-box">
-        <h1>Cadastrar um aluno</h1>
-        <p>Cadastre o aluno da Auto Escola</p>
+        <h1>Cadastrar um instrutor</h1>
+        <p>Cadastre o instruto da Auto Escola</p>
         <form action="#">
             
         <div class="input-group">
@@ -58,18 +58,23 @@
         </div> 
 
         <div class="input-group">
-        <label for="cpf">CPF</label>
+        <label for="cpf">CPF:</label>
         <input type="text" id="cpf" placeholder="Informe seu cpf" required>
         </div> 
 
         <div class="input-group">
-        <label for="data">Data de nascimento</label>
+        <label for="data">Data de nascimento:</label>
         <input type="date" id="data" placeholder="Informe sua data de nascimento" required>
         </div> 
         
         <div class="input-group">
-        <label for="endereco">Endereço</label>
+        <label for="endereco">Endereço:</label>
         <input type="text" id="endereco" placeholder="Informe seu endereço" required>
+        </div> 
+
+        <div class="input-group">
+        <label for="setor">Setor:</label>
+        <input type="text" id="setor" placeholder="Informe seu setor" required>
         </div> 
         
 

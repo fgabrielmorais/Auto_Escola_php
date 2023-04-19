@@ -63,12 +63,12 @@
         </div> 
 
         <div class="input-group">
-        <label for="data">Data de nascimento</label>
+        <label for="data">Data de nascimento:</label>
         <input type="date" id="data" placeholder="Informe sua data de nascimento" required>
         </div> 
         
         <div class="input-group">
-        <label for="endereco">Endereço</label>
+        <label for="endereco">Endereço:</label>
         <input type="text" id="endereco" placeholder="Informe seu endereço" required>
         </div> 
         

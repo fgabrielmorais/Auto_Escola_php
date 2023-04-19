@@ -38,43 +38,16 @@
 
 
     <div class="form-box">
-        <h1>Cadastrar um aluno</h1>
-        <p>Cadastre o aluno da Auto Escola</p>
+        <h1>Deseja ver a habilitação de um dos alunos?</h1>
+        <p>Pesquisa e veja a habilitação do aluno solicitado</p>
         <form action="#">
             
         <div class="input-group">
-        <label for="nome">Nome Completo:</label>
-        <input type="text" id="nome" placeholder="Informe seu nome completo" required>
+        <label for="cpf">CPF do aluno:</label>
+        <input type="text" id="cpf" placeholder="Informe o CPF do aluno" required>
         </div>       
-        
-        <div class="input-group">
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" placeholder="Informe seu e-mail" required>
-        </div> 
-
-        <div class="input-group">
-        <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" placeholder="Informe seu telefone" required>
-        </div> 
-
-        <div class="input-group">
-        <label for="cpf">CPF</label>
-        <input type="text" id="cpf" placeholder="Informe seu cpf" required>
-        </div> 
-
-        <div class="input-group">
-        <label for="data">Data de nascimento</label>
-        <input type="date" id="data" placeholder="Informe sua data de nascimento" required>
-        </div> 
-        
-        <div class="input-group">
-        <label for="endereco">Endereço</label>
-        <input type="text" id="endereco" placeholder="Informe seu endereço" required>
-        </div> 
-        
-
         <div class="button-group">
-               <button>Cadastrar</button> 
+               <button>Pesquisar</button> 
         </div>
         </form>
     </div>
@@ -189,7 +162,7 @@ section{
 }
 
 .img-box img{
-    width: 100%;
+    width: 50%;
 }
 
 

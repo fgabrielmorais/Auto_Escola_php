@@ -133,8 +133,6 @@ nav{
 }
 
 .images{
-    width: 220px;
-    height: 210px;
     position: absolute;
     bottom: 0;
     right: 100px;
@@ -155,12 +153,12 @@ nav{
 
 .images img{
     place-items: center;
-    height: 700px;
+    height: 500px;
     position: absolute;
     left: 200%;
     bottom: 150px;
     
-    transform: translateX(-80%);
+    transform: translateX(-50%);
     /* transition: bottom 1s, left 1s; */
 }
 

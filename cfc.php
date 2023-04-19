@@ -38,38 +38,38 @@
 
 
     <div class="form-box">
-        <h1>Cadastrar um aluno</h1>
-        <p>Cadastre o aluno da Auto Escola</p>
+        <h1>Cadastrar de CFC</h1>
+        <p>Cadastre o CFC da Auto Escola</p>
         <form action="#">
             
         <div class="input-group">
-        <label for="nome">Nome Completo:</label>
-        <input type="text" id="nome" placeholder="Informe seu nome completo" required>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Informe nome" required>
         </div>       
         
         <div class="input-group">
+        <label for="cnpj">CNPJ:</label>
+        <input type="text" id="cnpj" placeholder="Informe o CNPJ" required>
+        </div> 
+
+        <div class="input-group">
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" placeholder="Informe o endereço" required>
+        </div> 
+
+        <div class="input-group">
         <label for="email">E-mail:</label>
-        <input type="email" id="email" placeholder="Informe seu e-mail" required>
+        <input type="email" id="email" placeholder="Informe o e-mail" required>
         </div> 
 
         <div class="input-group">
-        <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" placeholder="Informe seu telefone" required>
-        </div> 
-
-        <div class="input-group">
-        <label for="cpf">CPF</label>
-        <input type="text" id="cpf" placeholder="Informe seu cpf" required>
-        </div> 
-
-        <div class="input-group">
-        <label for="data">Data de nascimento</label>
-        <input type="date" id="data" placeholder="Informe sua data de nascimento" required>
+        <label for="nmrDetran">Número de registro no DETRAN:</label>
+        <input type="number" id="nmrDetran" placeholder="Informe o número de registro no DETRAN" required>
         </div> 
         
         <div class="input-group">
-        <label for="endereco">Endereço</label>
-        <input type="text" id="endereco" placeholder="Informe seu endereço" required>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" placeholder="Informe a senha" required>
         </div> 
         
 
