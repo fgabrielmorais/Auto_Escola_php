@@ -331,14 +331,27 @@ nav{
     color: yellow;
 }
 
+
 .navbar.open{
     right: 10%;
 }
 }
 
 
-@media (max-width: 930px){
-    .img-box{
+
+@media (max-width: 1090px){
+
+
+    
+img{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    align-items: center;
+}
+
+
+.img-box{
         display: none;
     }
 
@@ -347,25 +360,57 @@ nav{
     }
 
     .form-box{
+        margin-top: 200px;
         width: 100%;
         border-radius: 20px;     
     }
 
 
-    nav{
-        padding: 14px 2%;
-        transition: .2s;
-    
-    }
-
-    .navbar a {
-        padding: 5px 0;
-        margin: 0 20px;
-    }
-
-
+.navbar{
+    position: absolute;
+    top: 15%;
+    width: 270px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    transition: all .50s ease;
 }
 
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.box{
+    margin-top: 150px;
+
+    }
+
+.navbar a {
+    display: block;
+    
+    text-align: center;
+    margin: 12px 0;
+    padding: 0 25px;
+    transition: all .50s ease;
+}
+
+.navbar a:hover{
+    background: #ffdd00;
+    color: black; 
+    transform: translateY(5px);
+}
+
+.navbar a.active{
+    color: yellow;
+}
+
+.navbar.open{
+    right: 10%;
+}
+}
 
 
 

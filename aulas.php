@@ -287,18 +287,38 @@ form .button-group button:hover{
 }
 
 
+.navbar a.active:hover{
+    background: transparent;
+}
 
 
 
 
 @media (max-width: 1090px){
 
+
+    
 img{
     display: flex;
     justify-content: center;
     place-items: center;
     align-items: center;
 }
+
+
+.img-box{
+        display: none;
+    }
+
+    .box{
+        width: 700px;
+    }
+
+    .form-box{
+        margin-top: 200px;
+        width: 100%;
+        border-radius: 20px;     
+    }
 
 
 .navbar{
@@ -346,37 +366,6 @@ nav{
     right: 10%;
 }
 }
-
-
-@media (max-width: 930px){
-    .img-box{
-        display: none;
-    }
-
-    .box{
-        width: 700px;
-    }
-
-    .form-box{
-        width: 100%;
-        border-radius: 20px;     
-    }
-
-
-    nav{
-        padding: 14px 2%;
-        transition: .2s;
-    
-    }
-
-    .navbar a {
-        padding: 5px 0;
-        margin: 0 20px;
-    }
-
-
-}
-
 
 
 

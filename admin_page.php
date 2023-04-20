@@ -38,7 +38,7 @@
     </div>
     
     <div class="images">
-    <img src="imagens/divulgacao.png" class="divulgacao">
+    <img src="imagens/divulgacao.png">
     </div> 
 </div>
 
@@ -85,6 +85,7 @@ nav{
     transition: all .50s ease;
 }
 
+
 .logo{
     display: flex;
     align-items: center;
@@ -117,8 +118,11 @@ nav{
 
 
 .detel{
-    margin-left: 10%;
+    margin-right: 250px;
     margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 
 }
 
@@ -132,33 +136,23 @@ nav{
     line-height: 22px;
 }
 
-.images{
-    position: absolute;
-    bottom: 0;
-    right: 100px;
 
-}
 
 .boasvindas{
+    width: 80%;
+    justify-content: center;
     display: flex;
+    flex-direction: space-between;
 }
 
 
 
-
-.images .divulgacao{
-    
-    transform: translateX(-120%);
-}
 
 .images img{
     place-items: center;
     height: 500px;
     position: absolute;
-    left: 200%;
-    bottom: 150px;
-    
-    transform: translateX(-50%);
+
     /* transition: bottom 1s, left 1s; */
 }
 
@@ -182,7 +176,6 @@ nav{
     margin: 50px 0;
     border-radius: 20px;
 }
-
 .detel a:hover{ 
     --p: 100%;
     color: black;
@@ -190,17 +183,38 @@ nav{
 
 
 
-@media (max-width: 1290px){
+
+
+@media (max-width: 1600px){
+    
+    .boasvindas{
+    margin-top: 100px;
+    }
+
+
+    .boasvindas .images{
+        margin-right: 200px;
+        transition: .4s;
+     
+    }
+
+}
+
+@media (max-width: 1390px){
 
 *{
     text-align: center;
 }
 
-.boasvindas .detel{
-    margin-top: 230px;
+.boasvindas{
+    margin-top: 300px;
     width: 100%;
-    margin-right: 40px;
+    margin-left: 0px;
     text-align: center;
+}
+
+.detel{
+    margin-right: 0px;
 }
 
 .images{
